@@ -1,0 +1,305 @@
+body {
+    background: linear-gradient(to top, #000000, #696969);
+    min-height: 100vh;
+}
+
+#indexlogo {
+    width: 25%;
+    height: auto;
+    position: relative;
+}
+
+#navbtn {
+    background: rgb(100, 100, 100) !important;
+}
+
+/* #indexlogo media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    #indexlogo {
+        width: 53%;
+    }
+  }
+
+/* #indexlogo media query for screens smaller than 995px and larger than 769px */
+@media (max-width: 995px) and (min-width: 769px) {
+    #indexlogo {
+        width: 40%;
+    }
+  }
+
+/* #indexlogo media query for screens smaller than 1400px and larger than 996px */
+@media (max-width: 1400px) and (min-width: 996px) {
+    #indexlogo {
+        width: 30%;
+    }
+  }
+
+#logocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    overflow: hidden;
+    padding-top: 1vh;
+}
+
+/* Styles the flexbox navigation bar at the top of the page */
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(150, 150, 150);
+    position:fixed;
+    top:0;                 
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    outline: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    background-image: linear-gradient(183deg,rgb(0, 0, 0), rgba(58, 0, 0, 0.5));
+  }
+
+/* Styles the links in the Nav bar */
+a:link { text-decoration: none; color: rgb(177, 177, 177);}
+a:visited { text-decoration: none; color: rgb(177, 177, 177); }
+a:focus { text-decoration: none; color: rgb(177, 177, 177); }
+
+/* Styles the text in the Navbar */
+.formatting {              
+    margin: 10px;
+    text-indent: 40px;     
+    text-shadow: 0 0 2px rgb(221, 221, 221);
+    font-size: 200%;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+}
+
+/* .formatting media query for screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .formatting {
+        font-size: 150% !important;
+        text-indent: 20px;
+    }
+  }
+
+/* .formatting media query for screens smaller than 1399px */
+@media (max-width: 1399px) {
+    .formatting {
+        font-size: 175%;
+        text-indent: 20px;
+    }
+  }
+
+/* Used to font-style and pad all content on the page, except the flexbox Nav bar. Divides each section  of the page, making it easier to code with. */
+.container {
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 75px;
+    padding-right: 75px;   
+    padding-bottom: 30px;
+    color: rgb(200, 200, 200);
+}
+
+/* Styles the primary content in each section of the page */
+.maintext {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 1px;   
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    outline: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+/* Styles the header for every section */
+.header {
+    display: flex;
+    white-space: nowrap;
+    border-radius: 10px;   
+    background-color: rgb(90, 10, 10);
+    justify-content: center;
+    overflow: hidden;
+    text-shadow: 0 0 10px #000000;
+    outline: 1px solid rgba(255, 208, 0, 0.5);
+    text-overflow: ellipsis;
+    box-shadow: 0 0 10px rgb(90, 10, 10);;
+}
+
+.headertext {
+    margin: 8px;
+    font-size: 60%;
+    font-weight: 700;
+}
+
+/* .headertext media queries */
+@media (max-width: 768px) and (min-width: 491px) {
+    .longheader {
+        font-size: 50%;
+    }
+  }
+
+@media (max-width: 490px) and (min-width: 416px) {
+    .longheader {
+        font-size: 42%;
+    }
+  }
+
+@media (max-width: 415px) {
+    .longheader {
+        font-size: 39%;
+    }
+  }
+
+.title1 {
+    font-size: 1.27cm;
+    margin-top: 50px;
+    text-shadow: 0 3px 5px #000000;
+}
+
+.title1-1 {
+    font-size: 1.05cm;
+    text-shadow: 0 3px 5px #000000;
+}
+
+.title2 {
+    font-size: 0.7cm;
+    margin-top: 35px;
+    text-shadow: 0 3px 5px #000000;
+}
+
+.titlebold {
+    font-weight: 700;
+    text-shadow: 0 3px 5px black;
+}
+
+.textbold {
+    font-weight: 700;
+    text-shadow: 0 1px 2px black;
+}
+
+.images {
+    max-width: 100%;
+    height: auto;
+    border: solid 1px whitesmoke;
+    float: right;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+#scp005 {
+    width: 33%;
+    height: auto;
+    border: solid 1px whitesmoke;
+    float: right;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+/* #scp005 image media query for screens smaller than 575px */
+@media (max-width: 575px) {
+    #scp005 {
+      width: 100%;
+    }
+  }
+
+
+
+
+/* #scp005 image media query for screens larger than 900px */
+@media (min-width: 900px) {
+    #scp005 {
+        width: 25%;
+    }
+  }
+
+#scp004 {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 35%;
+    border-radius: 8px;
+    outline: solid 1px #ffffff;
+    
+}
+
+/* #scp004 image media query for screens smaller than 575px */
+@media (max-width: 575px) {
+    #scp004 {
+      width: 100%;
+    }
+  }
+  
+/* #scp004 image media query for screens larger than 900px */
+@media (min-width: 900px) {
+    #scp004 {
+        width: 25%;
+    }
+  }
+
+#codefont002 {
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 1px;  /* Styles SCP "report" templates */
+    margin-top: 100px;
+    margin-bottom: 2vh;
+    outline: 2px solid rgb(105, 0, 0);
+    background-color: rgb(190, 151, 99);
+}
+
+/* New Media query added to keep Report template correctly formatted */
+@media (max-width: 1399px) {
+    #codefont002 {
+        margin-top: 3.33vh;
+    }
+  }
+
+
+
+code {
+    color: black !important;
+}
+
+#logo002 {
+    float: right;
+}
+
+.footer {
+    color: #858585;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.formatting:hover {
+    text-shadow: 0 2px 3px #ffffff; 
+    color: rgb(204, 203, 202);
+  }
+
+.readButton {
+    max-width: 6.5%;
+    margin-left: auto;
+}
+
+@media (max-width: 575px) {
+    .readButton {
+      max-width: 10%;
+    }
+  }
+
+.desbox{
+    position: absolute;
+}
